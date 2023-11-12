@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  @font-face {
+    font-family: "NCS Radhiumz";
+    src: url("NCS Radhiumz.ttf");
+  }
+
+  @font-face {
+    font-family: "Avenir LT Std";
+    src: url("AvenirLTStd.ttf");
+  }
+
+}
+
+@layer components {
+
+  .tokens-grid {
+    @apply w-full text-white border-collapse;
+  }
+
+  .tokens-grid thead th {
+   @apply  py-3 px-4 text-left;
+  }
+
+  .tokens-grid tbody td {
+    @apply  py-3 px-4 text-left text-white;
+
+  }
+
+  .tokens-grid tbody td:first-child {
+    @apply border-2 rounded-md;
+  }
+
+  .tokens-grid tbody td:last-child {
+    @apply border-2 rounded-md;
+  }
+
+  .tokens-grid tbody tr:nth-child(even) td {
+    @apply bg-gray-700;
+  }
+
+}
+
+@layer utilities {}

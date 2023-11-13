@@ -11,7 +11,7 @@
     "lint": "next lint",
     "sb": "storybook dev -p 6006",
     "build-sb": "storybook build --output-dir=./storybook-static",
-    "deploy-sb": "gh-pages -d storybook-static -b gh-pages -m 'Deploy Storybook to GitHub Pages'"
+    "deploy-sb": "npm run build-sb && gh-pages -d storybook-static -b gh-pages -m 'Deploy Storybook to GitHub Pages'"
   },
   "dependencies": {
     "@radix-ui/react-slot": "1.0.2",

@@ -25,6 +25,6 @@ jobs:
 
       - name: Deploy storybook
 
-        run: npm run deploy-sb -- --ci --existing-output-dir=storybook-static --branch=main
+        run: npm run deploy-sb -- --ci --existing-output-dir=storybook-static --branch=gh-pages
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}

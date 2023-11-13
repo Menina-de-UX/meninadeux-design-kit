@@ -25,7 +25,7 @@ jobs:
 
       - name: Configure Git identity
         run: |
-          git config --global user.email "joaoteles@gmail.com"
+          git config --global user.email "joaojoseteles@gmail.com"
           git config --global user.name "Joao Teles"
 
       - name: Deploy storybook

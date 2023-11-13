@@ -11,7 +11,7 @@
     "lint": "next lint",
     "sb": "storybook dev -p 6006",
     "build-sb": "storybook build",
-    "deploy-sb": "storybook-to-ghpages"
+    "deploy-sb": "storybook-to-ghpages -b gh-pages -s storybook-static"
   },
   "dependencies": {
     "@radix-ui/react-slot": "1.0.2",

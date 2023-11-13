@@ -24,7 +24,6 @@ jobs:
       - run: npm run build
 
       - name: Deploy storybook
-
-        run: npm run deploy-sb -- --ci
+        run: npm run deploy-sb
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}

@@ -11,7 +11,7 @@
     "lint": "next lint",
     "sb": "storybook dev -p 6006",
     "build-sb": "storybook build",
-    "deploy-sb": "storybook-to-ghpages -b gh-pages -s storybook-static"
+    "deploy-sb": "gh-pages -d storybook-static -b gh-pages -m 'Deploy Storybook to GitHub Pages'"
   },
   "dependencies": {
     "@radix-ui/react-slot": "1.0.2",
@@ -43,6 +43,7 @@
     "eslint-config-next": "14.0.2",
     "eslint-plugin-storybook": "0.6.15",
     "eslint-plugin-tailwindcss": "3.13.0",
+    "gh-pages": "6.0.0",
     "prettier-plugin-tailwindcss": "0.5.7",
     "tsup": "7.2.0",
     "typescript": "^5"

@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "sb": "storybook dev -p 6006",
-    "build-sb": "storybook build --output-dir=./storybook-static",
+    "build-sb": "storybook build",
     "deploy-sb": "npm run build-sb && gh-pages -d storybook-static -b gh-pages -m 'Deploy Storybook to GitHub Pages'"
   },
   "dependencies": {

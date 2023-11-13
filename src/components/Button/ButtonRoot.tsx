@@ -9,13 +9,6 @@ import { tv, VariantProps } from 'tailwind-variants'
 // Styles
 // Interfaces
 
-export interface ButtonRootProps
-  extends ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof button> {
-  asChild?: boolean
-  children: ReactNode
-}
-
 const button = tv({
   base: [
     'min-w-28 min-h-10 px-7 py-2 flex justify-center items-center gap-2 font-avenir font-normal text-md rounded-xl cursor-pointer',
@@ -33,6 +26,13 @@ const button = tv({
     variant: 'primary',
   },
 })
+
+export interface ButtonRootProps
+  extends ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof button> {
+  asChild?: boolean
+  children: ReactNode
+}
 
 export function ButtonRoot({
   children,

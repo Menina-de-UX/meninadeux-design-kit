@@ -11,7 +11,7 @@ import { tv, VariantProps } from 'tailwind-variants'
 
 const button = tv({
   base: [
-    'min-w-28 min-h-10 px-7 py-2 flex justify-center items-center gap-2 font-avenir font-normal text-md rounded-xl cursor-pointer',
+    'min-w-28 min-h-10 px-7 py-2 flex justify-center items-center gap-2 font-avenir font-medium text-md rounded-xl cursor-pointer',
   ],
   variants: {
     variant: {
